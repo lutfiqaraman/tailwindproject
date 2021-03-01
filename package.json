@@ -1,0 +1,20 @@
+{
+  "name": "tailwindproject",
+  "version": "1.0.0",
+  "description": "A project to use Tailwind CSS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [],
+  "author": "Lutfi Qaraman",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  }
+}
