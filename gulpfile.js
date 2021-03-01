@@ -28,7 +28,7 @@ function watch() {
 
     gulp
         .watch(['./tailwind.config.js', './postcss.config.js', './gulpfile.js'], styles)
-        .on('change', browserSync.reload());
+        .on('change', browserSync.reload);
 
 }
 
