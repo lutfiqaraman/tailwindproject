@@ -1,10 +1,9 @@
-import gulp from 'gulp';
-import gulpPostCSS from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import tailwindcss from 'tailwindcss';
-import browserSync from "browser-sync";
-
-const source = './build';
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const postcss = require('gulp-postcss');
+const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
+const source = './src/';
 const dest  = './build/';
 
 function html() {
@@ -14,7 +13,7 @@ function html() {
 function styles() {
     return gulp
         .src(source + '**/*.css')
-        .pipe(gulpPostCSS([tailwindcss, autoprefixer]))
+        .pipe(postcss([tailwindcss, autoprefixer]))
         .pipe(gulp.dest(dest));
 }
 

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A project to use Tailwind CSS",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "gulp"
   },
